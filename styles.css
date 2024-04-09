@@ -1,4 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Fira Code";
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.container {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .header {
-    color: red;
-    background-color: aqua;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 2em;
+}
+
+.heading {
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 2em ;
+}
+
+.heading .img-container {
+    width: 200px;
+    /* adjust according to your image size */
+    height: 200px;
+    /* adjust according to your image size */
+    border-radius: 50%;
+    /* make it a circle */
+    overflow: hidden;
+    /* hide parts of the image outside the circle */
+    display: flex;
+    /* use flexbox */
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    margin-top: 2em;
+}
+
+.heading img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5em;
+}
+
+.welcome-msg {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10em;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
 }
